@@ -1,42 +1,110 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* styles/Header.module.css */
+.header {
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.topBar {
+  background-color: #f5f5f5;
+  padding: 10px 0;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #555;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.mainHeader {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+.logoNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2a7f62; /* Green color */
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.nav {
+  display: flex;
+  gap: 30px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #2a7f62;
+}
+/* styles/Hero.module.css */
+.hero {
+  background-color: #e6f2ff; /* Light blue background */
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero h2 {
+  color: #2a7f62;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.readMore {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #2a7f62;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.readMore:hover {
+  background-color: #1e6b4e;
+}
+
+.cta {
+  background-color: #2a7f62;
+  color: white;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+.cta h3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
 }

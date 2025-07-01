@@ -1,95 +1,22 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import '@/app/globals.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="d-flex position-relative" style={{ minHeight: 'calc(100vh - 100px)' }}>
+      <div className="bg-success" style={{ flex: 0.4 }}></div>
+      <div style={{ flex: 0.8, position: 'relative' }}>
+        <Image src="/solor/wide-panale.jpg" alt="Solar panels" layout="fill" objectFit="cover" />
+      </div>
+      <div className="bg-warning p-4 position-absolute" style={{ top: '50%', left: '30%', transform: 'translate(-50%, -50%)', zIndex: 2, maxWidth: '400px', height :"400px", fontSize: '23px', borderRadius:"10px" }}>
+        <h2>Renewable Energy</h2>
+        <p>
+          Techniques for harvesting solar energy, wind energy, and even the tidal
+          movements of the ocean have been around for decades, but the importance of
+          improving their
+        </p>
+        <a href="#" className="fw-bold text-dark">Read More</a>
+      </div>
     </div>
   );
 }
